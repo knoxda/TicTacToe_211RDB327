@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chalkboard"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/turnTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/chalkboard"
+        android:text="Turn X"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/a1"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+            <View
+                style="@style/verticalLine"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/a2"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+            <View
+                style="@style/verticalLine"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/a3"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:background="#FFFFFF" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+            <View
+                style="@style/verticalLine"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+            <View
+                style="@style/verticalLine"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:background="#FFFFFF" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/c1"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+            <View
+                style="@style/verticalLine"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/c2"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+            <View
+                style="@style/verticalLine"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/c3"
+                style="@style/column"
+                android:fontFamily="@font/chalkboard"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chalk"
+        android:text="Player name:"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnTV" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/chalk"
+        android:text="Current standings:"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/chalk"
+        android:text="Crosses -  0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/chalk"
+        android:text="Noughts - 0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
